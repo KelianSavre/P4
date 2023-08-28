@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
                 crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="sass/style.css">    
+        <link rel="stylesheet" href="sass/style_index.css">
+        <link rel="stylesheet" href="sass/style_shared.css">   
     </head>
     
     <body>
@@ -20,26 +21,38 @@
                     <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
                 </div>
                 <div class="header__input">
-                    <!-- Nom classe a revoir + input -->
-                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    
+                    <p class="header__text"><i class="fa-solid fa-location-dot header__icon" aria-hidden="true"></i> Paris, Belleville</p>
                 </div>
             </header>
             <main>
                 <section class="presentation">
                     <h1 class="presentation__title">Réservez le menu qui vous convient</h1>
                     <p class="presentation__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        
+                    <a class="button" href="#">Explorer nos restaurants</a>
+
+                    
         
                 </section>
                 <section class="fonctionnement">
-                    <h2 class="fonctionnement__title">Fonctionnement</h2>
-        
-        
+                    <div class="fonctionnement-display">
+                        <h2 class="fonctionnement__title">Fonctionnement</h2>
+                        <div class="box">
+                            <p> <i class="fa-solid fa-mobile-screen-button fonctionnement__icon"></i> Choisissez un restaurant</p>
+                        </div>
+                        <div class="box">
+                            <p> <i class="fa-solid fa-list-ul fonctionnement__icon"></i> Composez votre menu</p>
+                        </div>
+                        <div class="box">
+                            <p> <i class="fa-solid fa-store fonctionnement__icon"></i> Dégustez au restaurant</p>
+                        </div>
+                    </div>
+                    
                 </section>
                 <section class="restaurants">
                     <div class="restaurants-display">
                         <h2 class="restaurants__title">Restaurants</h2>
-                        <a class="width-card" href="">
+                        <a class="width-card" href="menu1.html">
                             <article class="restaurants__card">
                                 <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat du restaurant">
                                 <!-- Rectangle nouveau a rajouter -->
@@ -48,11 +61,13 @@
                                         <h3 class="card-title">La palette du goût</h3>
                                         <p class="card-subtitle">Ménilmontant</p>
                                     </div>
-                                    <!-- Rajouter div pour like -->
+                                    <div class="card-like">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </div>
                                 </div>
                             </article>
                         </a>
-                        <a class="width-card" href="">
+                        <a class="width-card" href="menu2.html">
                             <article class="restaurants__card">
                                 <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
                                 <!-- Rectangle nouveau a rajouter -->
@@ -61,11 +76,13 @@
                                         <h3 class="card-title">La note enchantée</h3>
                                         <p class="card-subtitle">Charonne</p>
                                     </div>
-                                    <!-- Rajouter div pour like -->
+                                    <div class="card-like">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </div>
                                 </div>
                             </article>
                         </a>
-                        <a class="width-card" href="">
+                        <a class="width-card" href="menu3.html">
                             <article class="restaurants__card">
                                 <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                                 <!-- Rectangle nouveau a rajouter -->
@@ -74,11 +91,14 @@
                                         <h3 class="card-title">À la française</h3>
                                         <p class="card-subtitle">Cité Rouge</p>
                                     </div>
-                                    <!-- Rajouter div pour like -->
+                                    <div class="card-like">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </div>
+                                    
                                 </div>
                             </article>
                         </a>
-                        <a class="width-card" href="">
+                        <a class="width-card" href="menu4.html">
                             <article class="restaurants__card">
                                 <img src="Images+et+textes+Ohmyfood/Images et textes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                                 <!-- Rectangle nouveau a rajouter -->
@@ -87,7 +107,9 @@
                                         <h3 class="card-title">Le délice des sens</h3>
                                         <p class="card-subtitle">Folie-Méricourt</p>
                                     </div>
-                                    <!-- Rajouter div pour like -->
+                                    <div class="card-like">
+                                        <i class="fa-regular fa-heart heart-icon"></i>
+                                    </div>
                                 </div>
                             </article>
                         </a>  
@@ -104,7 +126,7 @@
                         <p class="footer__subtitle"><i class="fa-solid fa-utensils footer__icon"></i>Proposer un restaurant</p>
                         <p class="footer__subtitle"><i class="fa-solid fa-handshake-angle footer__icon"></i>Devenir partenaire</p>
                         <p>Mention légales</p>
-                        <p><a class="contact" href="">Contact</a></p>
+                        <p><a class="contact" href="mailto:ohmyfood@gmail.com">Contact</a></p>
                     </article>
                 </div>
             </footer>

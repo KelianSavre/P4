@@ -1,0 +1,144 @@
+.fonctionnement {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  width: 100%;
+}
+.fonctionnement-display {
+  padding: 15px;
+}
+.fonctionnement-title {
+  height: 24px;
+  font-weight: 700;
+}
+.fonctionnement .box {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  box-sizing: content-box;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+  margin-bottom: 20px;
+  height: 72px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.fonctionnement__icon {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+.fonctionnement__icon:hover {
+  color: #9356DC;
+}
+
+.restaurants {
+  font-family: "Roboto", sans-serif;
+  background-color: #F6F6F6;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.restaurants-display {
+  padding: 15px;
+}
+.restaurants__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.restaurants .width-card {
+  width: 100%;
+}
+.restaurants__card {
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: content-box;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-bottom: 20px;
+}
+.restaurants__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+  height: 191px;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.restaurants__card .card-content {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurants__card .card-like {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.restaurants__card .card-text {
+  padding-left: 15px;
+}
+.restaurants__card .card-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurants__card .card-subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+  align-items: center;
+}
+.header__logo img {
+  height: 36px;
+  width: 200px;
+}
+.header__input {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+.header__input p {
+  font-weight: 600;
+  font-size: 16px;
+}
+.header__icon {
+  padding-right: 8px;
+}
+
+.presentation {
+  background-color: #F6F6F6;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  width: 62%;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.presentation__subtitle {
+  text-align: center;
+  width: 90%;
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.presentation .button {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style_index.css.map */

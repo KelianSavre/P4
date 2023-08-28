@@ -1,7 +1,7 @@
 $main-font-family:'Roboto', sans-serif;
 $second-font-family:'Shrikhand', cursive;
-$title-font-size:700;
-$section-title-font-size:500;
+$title-font-weight:700;
+$section-title-font-weight:500;
 $secondary-background-color:white;
 $main-background-color:#F6F6F6;
 $main-text-color:black;
@@ -35,40 +35,9 @@ a {
         color: $main-text-color;
     }
 }
-
-.restaurants{
-    font-family:$main-font-family;
-    background-color: $main-background-color;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.heart-icon{
+    font-size: 22px;
     
-    &-display{
-        padding: 15px;
-    }
-    &__title{
-        font-size: $section-title-font-size;
-    }
-    .width-card{
-        width: 100%;
-        
-    }
-    &__card{
-        background-color:$secondary-background-color;
-        border-radius: 15px;
-        box-sizing: content-box;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        
-        img{
-            object-fit: cover;
-            box-sizing: border-box;
-            height: 191px;
-            width: 100%;
-            border-top-right-radius:15px;
-            border-top-left-radius: 15px;
-
-        }
-    }
 }
 
 .footer{
@@ -80,7 +49,7 @@ a {
     
     &__title{
         font-family: $second-font-family;
-        height: 18px;
+        font-size: 18px;
         font-style: italic;
         font-weight: 400;
         margin: 0px;
@@ -88,12 +57,12 @@ a {
     }
     .footer__subtitle{
         font-family: $main-font-family;
-        height: 16px;
+        font-size: 16px;
         font-weight: 500;
     }
     p{
         font-family: $main-font-family;
-        height: 16px;
+        font-size: 16px;
         font-weight: 400;
     }
     a{
@@ -108,25 +77,13 @@ a {
         width: 12px;
     }
 }
-
-.header{
-
-    &__logo{
-        display: flex;
-        justify-content: center;
-        height: 63px;
-        align-items: center;
-
-        img{
-            height: 36px;
-            width: 200px;
-        }
-    }
-    &__input{
-        background-color: #EAEAEA;
-        display: flex;
-        justify-content: center;
-        height: 50px;
-        align-items: center;
+.button{
+    background: linear-gradient(to top, $main-color, $secondary-color);
+    border-radius: 25px;
+    color: $secondary-text-color;
+    padding: 15px 20px;
+    &:visited{
+        color: $secondary-text-color;
     }
 }
+

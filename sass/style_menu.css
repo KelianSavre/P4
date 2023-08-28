@@ -1,0 +1,39 @@
+.header__logo {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+  align-items: center;
+}
+.header__logo img {
+  height: 36px;
+  width: 200px;
+}
+
+section {
+  padding: 15px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: content-box;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+.card .card-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.card .card-subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 300;
+}
+.card .card-info {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style_menu.css.map */

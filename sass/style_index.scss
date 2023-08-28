@@ -1,0 +1,178 @@
+$main-font-family:'Roboto', sans-serif;
+$second-font-family:'Shrikhand', cursive;
+$title-font-weight:700;
+$section-title-font-weight:500;
+$secondary-background-color:white;
+$main-background-color:#F6F6F6;
+$main-text-color:black;
+$secondary-text-color:white;
+$tertiary-text-color:#007866;
+$main-color:#9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+
+
+.fonctionnement{
+    font-family: $main-font-family;
+    background-color: $secondary-background-color;
+    width: 100%;
+    
+    &-display{
+        padding: 15px;
+    }
+
+    &-title{
+        height: 24px;
+        font-weight:$title-font-weight;
+    }
+    .box{
+        background-color:$main-background-color;
+        border-radius: 20px;
+        box-sizing: content-box;
+        filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+        margin-bottom: 20px;
+        height: 72px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+
+
+    }
+    &__icon{
+        
+        padding-left: 20px;
+        padding-right: 15px;
+        &:hover{
+            color: $main-color;
+        }
+    }
+
+}
+
+
+.restaurants{
+    font-family:$main-font-family;
+    background-color: $main-background-color;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    &-display{
+        padding: 15px;
+    }
+    &__title{
+        font-weight: $title-font-weight;
+        font-size: 24px;
+    }
+    .width-card{
+        width: 100%;
+        
+    }
+    &__card{
+        background-color:$secondary-background-color;
+        border-radius: 15px;
+        box-sizing: content-box;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        margin-bottom: 20px;
+        
+        img{
+            object-fit: cover;
+            box-sizing: border-box;
+            height: 191px;
+            width: 100%;
+            border-top-right-radius:15px;
+            border-top-left-radius: 15px;
+
+        }
+        .card-content{
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card-like{
+            padding-top: 20px;
+            padding-right: 20px;
+        }
+        
+        .card-text{
+            padding-left: 15px;
+        }
+        .card-title{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: $title-font-weight;
+        }
+        .card-subtitle{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 17px;
+            font-weight: 300;
+        }
+
+
+    }
+}
+
+
+
+.header{
+    font-family: $main-font-family;
+    &__logo{
+        display: flex;
+        justify-content: center;
+        height: 63px;
+        align-items: center;
+
+        img{
+            height: 36px;
+            width: 200px;
+        }
+    }
+    &__input{
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        p{
+            font-weight: 600;
+            
+            font-size: 16px;
+        }
+    
+    }
+    &__icon{
+        padding-right: 8px;
+    }
+    
+}
+
+.presentation{
+    background-color: $main-background-color;
+    font-family: $main-font-family;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-weight: $title-font-weight;
+        font-size: 24px;
+        text-align: center;
+        width: 62%;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+    &__subtitle{
+        text-align: center;
+        width: 90%;
+        margin-top: 0px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+}
