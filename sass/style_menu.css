@@ -1,3 +1,6 @@
+.header {
+  position: relative;
+}
 .header__logo {
   display: flex;
   justify-content: center;
@@ -8,9 +11,83 @@
   height: 36px;
   width: 200px;
 }
+.header__nav {
+  position: absolute;
+  top: 20px;
+}
+.header__nav .fa-arrow-left {
+  padding-left: 15px;
+  font-size: 20px;
+}
 
 section {
-  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.photo-menu {
+  height: 275px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .photo-menu {
+    height: 383px;
+  }
+}
+
+.menu {
+  background-color: #F6F6F6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  top: -40px;
+  padding-top: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 75%;
+    margin: auto;
+  }
+  .menu section {
+    width: 63%;
+    margin: auto;
+  }
+}
+.menu__presentation {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .menu__presentation {
+    justify-content: center;
+  }
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.menu .heart-icon {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.menu .section-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.menu .button-display {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+.menu .button {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .card {
@@ -18,20 +95,29 @@ section {
   border-radius: 15px;
   box-sizing: content-box;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding-left: 15px;
 }
 .card .card-title {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  padding-top: 10px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 .card .card-subtitle {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
   font-weight: 300;
+}
+.card .card-price {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
 }
 .card .card-info {
   display: flex;

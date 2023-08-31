@@ -8,6 +8,7 @@ body {
   max-width: 1440px;
   min-width: 320px;
   box-sizing: border-box;
+  margin: auto;
 }
 
 a {
@@ -28,6 +29,43 @@ a:visited {
   padding: 22px;
   padding-bottom: 10px;
   padding-left: 25px;
+  min-height: 114px;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+  }
+  .footer__article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 10px;
+  }
+  .footer #footer__order1 {
+    order: 1;
+  }
+  .footer #footer__order2 {
+    order: 2;
+    padding-left: 10px;
+  }
+  .footer #footer__order3 {
+    order: 3;
+    padding-left: 40px;
+  }
+  .footer #footer__order4 {
+    order: 4;
+    padding-left: 10px;
+  }
+  .footer #footer__order5 {
+    order: 5;
+    padding-right: 40px;
+    padding-left: 60px;
+  }
 }
 .footer__title {
   font-family: "Shrikhand", cursive;
@@ -64,6 +102,9 @@ a:visited {
   border-radius: 25px;
   color: white;
   padding: 15px 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 .button:visited {
   color: white;

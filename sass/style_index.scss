@@ -1,5 +1,5 @@
-$main-font-family:'Roboto', sans-serif;
-$second-font-family:'Shrikhand', cursive;
+$main-font-family:'Roboto';
+$second-font-family:'Shrikhand';
 $title-font-weight:700;
 $section-title-font-weight:500;
 $secondary-background-color:white;
@@ -16,14 +16,34 @@ $tertiary-color:#99E2D0;
     font-family: $main-font-family;
     background-color: $secondary-background-color;
     width: 100%;
-    
-    &-display{
-        padding: 15px;
+    @media screen and (min-width:768px) {
+        width: 75%;
+        margin: auto;
+        padding-bottom: 10px;
     }
 
-    &-title{
+
+
+    &-display{
+        padding: 15px;
+        @media screen and (min-width:768px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .fonctionnement__title{
         height: 24px;
         font-weight:$title-font-weight;
+        padding-bottom: 20px;
+    }
+    .box-display{
+        @media screen and (min-width:1024px){
+            display: flex;
+            flex-direction:row;
+            
+
+        }
     }
     .box{
         background-color:$main-background-color;
@@ -35,13 +55,30 @@ $tertiary-color:#99E2D0;
         width: 90%;
         display: flex;
         align-items: center;
-
+        padding-right: 20px;
+        position: relative;
+        
+        @media screen and (min-width:1024px) {
+            width: 32%;
+            margin-right: 40px;
+        }
+        .box-number{
+            position: absolute;
+            border-radius: 100px;
+            color: $secondary-text-color;
+            background-color: $main-color;
+            padding-left: 6px;
+            padding-right: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            left: -10px;
+        }
 
     }
     &__icon{
         
         padding-left: 20px;
-        padding-right: 15px;
+        padding-right: 20px;
         &:hover{
             color: $main-color;
         }
@@ -51,7 +88,7 @@ $tertiary-color:#99E2D0;
 
 
 .restaurants{
-    font-family:$main-font-family;
+    font-family:$main-font-family, sans-serif;
     background-color: $main-background-color;
     width: 100%;
     padding-top: 30px;
@@ -59,13 +96,39 @@ $tertiary-color:#99E2D0;
     
     &-display{
         padding: 15px;
+        @media screen and (min-width:1024px) {
+            width: 75%;
+            margin: auto;
+            padding:0px
+        }
     }
     &__title{
         font-weight: $title-font-weight;
         font-size: 24px;
+        @media screen and (min-width:1024px) {
+            margin-top: 0px;
+        }
     }
+
+    .card-display{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        @media screen and (min-width:1024px){
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 40px;
+        }
+    }
+
     .width-card{
         width: 100%;
+        @media screen and (min-width:1024px) {
+            width: 46%;
+            
+        }
         
     }
     &__card{
@@ -73,7 +136,8 @@ $tertiary-color:#99E2D0;
         border-radius: 15px;
         box-sizing: content-box;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        margin-bottom: 20px;
+        
+        position: relative;
         
         img{
             object-fit: cover;
@@ -83,6 +147,15 @@ $tertiary-color:#99E2D0;
             border-top-right-radius:15px;
             border-top-left-radius: 15px;
 
+        }
+        .card-new{
+            background-color: $tertiary-color;
+            color:$tertiary-text-color;
+            position: absolute;
+            top: 15px;
+            right: 14px;
+            padding: 6px;
+            border: solid 0px transparent;
         }
         .card-content{
             height: 70px;
@@ -117,7 +190,7 @@ $tertiary-color:#99E2D0;
 
 
 .header{
-    font-family: $main-font-family;
+    
     &__logo{
         display: flex;
         justify-content: center;
@@ -136,8 +209,8 @@ $tertiary-color:#99E2D0;
         height: 50px;
         align-items: center;
         p{
-            font-weight: 600;
-            
+            font-weight: 500;
+            font-family: $main-font-family,sans-serif;
             font-size: 16px;
         }
     
@@ -150,7 +223,7 @@ $tertiary-color:#99E2D0;
 
 .presentation{
     background-color: $main-background-color;
-    font-family: $main-font-family;
+    font-family: $main-font-family, sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
