@@ -19,8 +19,30 @@ a:visited {
   color: black;
 }
 
-.heart-icon {
+.fa-heart {
   font-size: 22px;
+}
+
+.heart-empty {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.heart-empty:hover {
+  opacity: 0;
+}
+
+.heart-gradient {
+  background-clip: text;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 500ms;
+}
+.heart-gradient:hover {
+  opacity: 1;
 }
 
 .footer {
@@ -105,6 +127,12 @@ a:visited {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  transition-duration: 500ms;
+  transition-property: box-shadow, opacity;
+}
+.button:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  opacity: 0.85;
 }
 .button:visited {
   color: white;

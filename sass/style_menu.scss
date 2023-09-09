@@ -41,13 +41,25 @@ $tertiary-color:#99E2D0;
 
 }
 
+
 section{
     padding-bottom:10px;
+    position: relative;
+    hr{
+        width: 40px;
+        background-color: #99E2D0;
+        border: transparent;
+        height: 3px;
+        position: absolute;
+        top: 13px;
+        left: 2px;
+    }
 }
 
 .photo-menu{
     height: 275px;
     width: 100%;
+    object-fit: cover;
     @media screen and (min-width:1024px) {
         height: 383px;
     }
@@ -58,7 +70,7 @@ section{
     border-top-right-radius: 40px;
     position: relative;
     top: -40px;
-    
+    margin-bottom: -40px;
     padding-top: 20px;
     padding-left: 17px;
     padding-right: 17px;
@@ -66,6 +78,7 @@ section{
     @media screen and (min-width:1024px) {
         width:75%;
         margin: auto;
+        margin-bottom: -40px;
         section{
             width:63%;
             margin: auto;
@@ -75,7 +88,8 @@ section{
     &__presentation{
         display: flex;
         align-items: center;
-        @media screen and (min-width:1024px) {
+        
+        @media screen and (min-width:768px) {
             justify-content: center;
         }
 
@@ -86,15 +100,19 @@ section{
         font-size: 28px;
         margin: 0px;
         padding-bottom: 10px;
+        position: relative;
     }
-    .heart-icon{
-        padding-left: 30px;
-        padding-bottom: 10px;
+    .fa-heart{
+        position: absolute;
+        top: 10px;
+        right:-40px;
     }
     .section-title{
         font-family: $main-font-family, sans-serif;
         font-weight: 300;
         font-size: 16px;
+
+        
         
     }
     .button-display{
@@ -115,29 +133,119 @@ section{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 10px;
     padding-left: 15px;
+    position: relative;
+    // Revoir pb troncature texte animation mobile
+    
+    
+    
     .card-title{
         padding-top: 10px;
         margin: 0px;
         font-family: $main-font-family,sans-serif;
         font-size: 18px;
         font-weight: $title-font-weight;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     .card-subtitle{
         margin-top: 8px;
         margin-bottom: 10px;
         font-size: 15px;
         font-weight: 300;
+        font-family: $main-font-family, sans-serif;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        
     }
     .card-price{
         margin-top: 8px;
         margin-bottom: 10px;
+        margin-left: 8px;
         padding-right: 10px;
         font-family: $main-font-family, sans-serif;
         font-weight:$title-font-weight;
         font-size: 15px;
+        
     }
     .card-info{
         display: flex;
         justify-content: space-between;
+        min-width: 0px;
     }
+    .card-check{
+        width: 0px;
+        background-color: $tertiary-color;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        .fa-check{
+            color: $tertiary-color;
+            border-radius:25px;
+            border: solid 1px white;
+            background-color: white;
+            opacity: 0;
+        }
+    }
+    &:hover{
+        transition: padding-right 500ms;
+        padding-right: 60px;
+        
+        .card-check{
+            transition: width 500ms;
+            width: 60px;
+            .fa-check{
+                transition: opacity 200ms;
+                opacity: 1;
+            }
+        }
+    }
+    &:not(:hover){
+        padding-right:0px;
+        transition: padding-right 500ms;
+        .card-check{
+            transition: width 500ms;
+            width: 0px;
+            .fa-check{
+                transition: opacity 200ms;
+                opacity: 0;
+            }
+        }
+    }
+}
+@keyframes apparition {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.entrees{
+    animation: apparition 800ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.plats{
+    animation: apparition 800ms;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.desserts{
+    animation: apparition 800ms;
+    animation-delay: 1500ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
