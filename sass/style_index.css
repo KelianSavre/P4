@@ -125,7 +125,7 @@
   padding-left: 25px;
   padding-right: 20px;
 }
-.fonctionnement__icon:hover {
+.fonctionnement .fa-store {
   color: #9356DC;
 }
 
